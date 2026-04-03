@@ -55,11 +55,16 @@
 # 1.1 Web Server dan Server Side Scripting 
 Web Server merupakan sebuah perangkat lunak dalam server yang berfungsi menerima permintaan (request) berupa halaman web melalui HTTP atau HTTPS dari client yang dikenal dengan web browser dan mengirimkan kembali (response) hasilnya dalam bentuk halaman-halaman web yang umumnya berbentuk dokumen HTML.
 
-![Gambar1](images/gambar1.png)
-<p align="center">Gambar 1.1 Arsitektur web standar</p>
+<p align="center">
+  <img src="Images/gambar1.png" width="400"><br>
+  <b>Gambar 1.1 Arsitektur web standar</b>
+</p>
 
-![Gambar2](images/gambar2.png)
-<p align="center">Gambar 1.2 Arsitektur web dinamis</p>
+<p align="center">
+  <img src="Images/gambar1.png" width="400"><br>
+  <b>Gambar 1.1 Arsitektur web dinamis</b>
+</p>
+
 
 Beberapa web server yang banyak digunakan antara lain seperti berikut: 
 1. Apache Web Server (https://httpd.apache.org/)
@@ -86,7 +91,7 @@ Keistimewaan PHP sebagai bahasa pemrograman berbasis web adalah :
 
 # 1.2. Instalasi Apache, PHP dan MySQL dengan XAMPP 
 XAMPP sudah teristall di Laptop saya
-![Gambar3](images/gambar3.png)
+![Gambar3](Images/gambar3.png)
 
 # 1.3 Pengenalan PHP 
 Merupakan singkatan rekursif dari PHP : Hypertext Preprocessor. Pertama kali diciptakan oleh Rasmus Lerdorf pada tahun 1994. PHP sendiri harus ditulis diantara tag : 
@@ -101,7 +106,7 @@ Setiap satu statement (perintah) biasanya diakhiri dengan titik-koma (;). PHP ju
 ```
 Simpan file tersebut dengan nama hello.php pada direktori htdocs yang ada di folder XAMPP. Kemudian, jalankan pada browser dengan mengetikkan alamat http://localhost/hello.php . Hasilnya akan muncul di web browser seperti berikut: 
 
-![Gambar4](images/gambar4.png)
+![Gambar4](Images/gambar4.png)
 
 # 1.4 Variabel 
 Variabel digunakan untuk menyimpan sebuah value (nilai), data atau informasi. Nama variabel pada PHP diawali dengan tanda ```$```. Panjang dari suatu variabel tidak terbatas dan variabel tidak perlu dideklarasi terlebih dahulu sebelumnya. Setelah tanda ```$```, dapat diawali dengan huruf atau under-score (_). Karakter berikutnya bisa terdiri dari huruf, angka dan atau karakter tertentu yang diperbolehkan (karakter ASCII dari 127 – 255). 
@@ -117,7 +122,7 @@ Berikut adalah contoh penggunaan variabel pada PHP:
     echo "Nama : " . $nama; 
 ?> 
 ```
-![Gambar5](images/gambar5.png)
+![Gambar5](Images/gambar5.png)
 
 Pada PHP, tipe data dari suatu variabel tidak didefinisikan langsung oleh programmer, akan tetapi secara otomatis akan ditentukan oleh interpreter PHP. Namun demikian, PHP mendukung 8 (delapan) buah tipe data primitif, yaitu: 
 1. Boolean
@@ -139,7 +144,7 @@ Konstanta merupakan variabel konstan yang nilainya tidak berubah-ubah. Untuk men
     echo "NIM : " . NIM; 
 ?>
 ```
-![Gambar6](images/gambar6.png)
+![Gambar6](Images/gambar6.png)
 
 # 1.6 Operator dalam PHP
 Ada beberapa jenis operator pada PHP, yaitu:
@@ -203,7 +208,7 @@ Berikut adalah contoh ketika statement kondisi if-then dijalankan :
     }
 ?>
 ```
-![Gambar7](images/gambar7.png)
+![Gambar7](Images/gambar7.png)
 
 Dan berikut ini adalah contoh ketika statement switch-case dijalankan: 
 ```
@@ -236,7 +241,7 @@ switch ($nilai) {
 }
 ?>
 ```
-![Gambar8](images/gambar8.png)
+![Gambar8](Images/gambar8.png)
 
 # 1.8 Perulangan (Looping)
 Banyak jenis perulangan yang terdapat pada PHP. Adapun beberapa diantaranya adalah : 
@@ -294,7 +299,7 @@ do {
 } while ($i < 30);
 ?>
 ```
-![Gambar9](images/gambar9.png)
+![Gambar9](Images/gambar9.png)
 
 # 1.9 Function
 Dalam merancang kode program, kadang kita sering membuat kode yang melakukan tugas yang sama secara berulang-ulang, seperti membaca tabel dari database, menampilkan penjumlahan, dan lainlain. Tugas yang sama ini akan lebih efektif jika dipisahkan dari program utama, dan dirancang menjadi sebuah fungsi. 
@@ -321,7 +326,7 @@ function cetakGenap()
 cetakGenap();
 ?>
 ```
-![Gambar10](images/gambar10.png)
+![Gambar10](Images/gambar10.png)
 
 Contoh fungsi pada PHP menggunakan parameter dan tanpa return value: 
 ```
@@ -341,7 +346,7 @@ echo "Bilangan ganjil dari $a sampai $b adalah : <br>";
 cetakGenap($a, $b);
 ?>
 ```
-![Gambar11](images/gambar11.png)
+![Gambar11](Images/gambar11.png)
 
 Contoh fungsi pada PHP dengan return value:
 ```
@@ -358,7 +363,7 @@ echo "Luas Segitiga dengan alas $a dan tinggi $t adalah : " . luasSegitiga(
 );
 ?>
 ```
-![Gambar12](images/gambar12.png)
+![Gambar12](Images/gambar12.png)
 
 # 1.10 Array
 Array merupakan tipe data terstruktur yang berguna untuk menyimpan sejumlah data yang bertipe sama. Bagian yang menyusun array disebut elemen array, yang masing-masing elemen dapat diakses tersendiri melalui index array. Index array dapat berupa bilangan integer atau string. 
@@ -383,7 +388,7 @@ echo $arrKota[2] . "<br>"; //Bandung
 echo $arrKota[4] . "<br>"; //Sulawesi
 ?>
 ```
-![Gambar13](images/gambar13.png)
+![Gambar13](Images/gambar13.png)
 
 Cara mendeklarasikan suatu array pada PHP bisa dengan index string atau yang dinamakan dengan array assosiatif. Berikut adalah contoh pendeklarasian array assosiatif :
 ```
@@ -409,16 +414,13 @@ echo $arrNim["Ilham"] . "<br>"; //11011309
 echo $arrNim['Fadhlan'] . "<br>"; //11011113
 ?>
 ```
-![Gambar14](images/gambar14.png)
+![Gambar14](Images/gambar14.png)
 
 # UNGUIDED
-*Tugas Modul 9 - PHP: Buat Sistem Penilaian Mahasiswa*
-
-*Deskripsi*
-
+Deskripsi:
 Buat program PHP sederhana untuk menampilkan data beberapa mahasiswa, menghitung nilai akhir, menentukan grade, dan status kelulusan.
 
-Ketentuan
+Ketentuan:
 * Gunakan array Asosiasi untuk menyimpan minimal 3 data mahasiswa
 
 Setiap mahasiswa punya:
@@ -434,7 +436,7 @@ Setiap mahasiswa punya:
 * Gunakan loop untuk menampilkan seluruh data
 * Tampilkan hasil dalam bentuk tabel HTML
 
-Output minimal
+Output minimal:
 * Nama
 * NIM
 * Nilai akhir
@@ -558,9 +560,9 @@ echo "<br><b>Nilai tertinggi:</b> " . number_format($nilaiTertinggi,2);
 ```
 
 Output:
-![Gambar15](images/gambar15.png)
+![Gambar15](Images/gambar15.png)
 
-Kesimpulan:
-Program sistem penilaian mahasiswa ini berhasil dibuat menggunakan PHP dengan memanfaatkan array asosiatif untuk menyimpan data mahasiswa. Perhitungan nilai akhir dilakukan menggunakan function dan operator aritmatika, sedangkan penentuan grade dan status kelulusan menggunakan percabangan (if/else) serta operator perbandingan.
+Deskripsi:
+Program sistem penilaian mahasiswa ini dibuat menggunakan PHP dengan memanfaatkan array asosiatif untuk menyimpan data mahasiswa. Perhitungan nilai akhir dilakukan menggunakan function dan operator aritmatika, sedangkan penentuan grade dan status kelulusan menggunakan percabangan (if/else) serta operator perbandingan.
 
 Selain itu, penggunaan perulangan (loop) memungkinkan program menampilkan seluruh data mahasiswa secara otomatis dalam bentuk tabel HTML. Program juga mampu menghitung rata-rata kelas dan menentukan nilai tertinggi.
