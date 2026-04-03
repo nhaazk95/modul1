@@ -117,6 +117,8 @@ Berikut adalah contoh penggunaan variabel pada PHP:
     echo "Nama : " . $nama; 
 ?> 
 ```
+![Gambar5](images/gambar5.png)
+
 Pada PHP, tipe data dari suatu variabel tidak didefinisikan langsung oleh programmer, akan tetapi secara otomatis akan ditentukan oleh interpreter PHP. Namun demikian, PHP mendukung 8 (delapan) buah tipe data primitif, yaitu: 
 1. Boolean
 2. Integer
@@ -137,6 +139,7 @@ Konstanta merupakan variabel konstan yang nilainya tidak berubah-ubah. Untuk men
     echo "NIM : " . NIM; 
 ?>
 ```
+![Gambar6](images/gambar6.png)
 
 # 1.6 Operator dalam PHP
 Ada beberapa jenis operator pada PHP, yaitu:
@@ -200,7 +203,7 @@ Berikut adalah contoh ketika statement kondisi if-then dijalankan :
     }
 ?>
 ```
-![Gambar5](images/gambar5.png)
+![Gambar7](images/gambar7.png)
 
 Dan berikut ini adalah contoh ketika statement switch-case dijalankan: 
 ```
@@ -233,7 +236,7 @@ switch ($nilai) {
 }
 ?>
 ```
-![Gambar6](images/gambar6.png)
+![Gambar8](images/gambar8.png)
 
 # 1.8 Perulangan (Looping)
 Banyak jenis perulangan yang terdapat pada PHP. Adapun beberapa diantaranya adalah : 
@@ -291,7 +294,7 @@ do {
 } while ($i < 30);
 ?>
 ```
-![Gambar7](images/gambar7.png)
+![Gambar9](images/gambar9.png)
 
 # 1.9 Function
 Dalam merancang kode program, kadang kita sering membuat kode yang melakukan tugas yang sama secara berulang-ulang, seperti membaca tabel dari database, menampilkan penjumlahan, dan lainlain. Tugas yang sama ini akan lebih efektif jika dipisahkan dari program utama, dan dirancang menjadi sebuah fungsi. 
@@ -318,6 +321,7 @@ function cetakGenap()
 cetakGenap();
 ?>
 ```
+![Gambar10](images/gambar10.png)
 
 Contoh fungsi pada PHP menggunakan parameter dan tanpa return value: 
 ```
@@ -337,6 +341,7 @@ echo "Bilangan ganjil dari $a sampai $b adalah : <br>";
 cetakGenap($a, $b);
 ?>
 ```
+![Gambar11](images/gambar11.png)
 
 Contoh fungsi pada PHP dengan return value:
 ```
@@ -353,6 +358,7 @@ echo "Luas Segitiga dengan alas $a dan tinggi $t adalah : " . luasSegitiga(
 );
 ?>
 ```
+![Gambar12](images/gambar12.png)
 
 # 1.10 Array
 Array merupakan tipe data terstruktur yang berguna untuk menyimpan sejumlah data yang bertipe sama. Bagian yang menyusun array disebut elemen array, yang masing-masing elemen dapat diakses tersendiri melalui index array. Index array dapat berupa bilangan integer atau string. 
@@ -377,6 +383,7 @@ echo $arrKota[2] . "<br>"; //Bandung
 echo $arrKota[4] . "<br>"; //Sulawesi
 ?>
 ```
+![Gambar13](images/gambar13.png)
 
 Cara mendeklarasikan suatu array pada PHP bisa dengan index string atau yang dinamakan dengan array assosiatif. Berikut adalah contoh pendeklarasian array assosiatif :
 ```
@@ -402,6 +409,7 @@ echo $arrNim["Ilham"] . "<br>"; //11011309
 echo $arrNim['Fadhlan'] . "<br>"; //11011113
 ?>
 ```
+![Gambar14](images/gambar14.png)
 
 # UNGUIDED
 *Tugas Modul 9 - PHP: Buat Sistem Penilaian Mahasiswa*
@@ -550,7 +558,7 @@ echo "<br><b>Nilai tertinggi:</b> " . number_format($nilaiTertinggi,2);
 ```
 
 Output:
-![Gambar8](images/gambar8.png)
+![Gambar15](images/gambar15.png)
 
 Kesimpulan:
 Program sistem penilaian mahasiswa ini berhasil dibuat menggunakan PHP dengan memanfaatkan array asosiatif untuk menyimpan data mahasiswa. Perhitungan nilai akhir dilakukan menggunakan function dan operator aritmatika, sedangkan penentuan grade dan status kelulusan menggunakan percabangan (if/else) serta operator perbandingan.
