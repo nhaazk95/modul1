@@ -1,18 +1,54 @@
-# 🌸 Praktikum Modul 4 — Flutter UI Widgets
+<div align="center">
+  <br />
 
-> Laporan Praktikum Pemrograman Mobile  
-> **Topik:** Menampilkan berbagai Widget UI di Flutter (Tema Pastel)
+  <h1>LAPORAN PRAKTIKUM <br>
+  APLIKASI BERBASIS PLATFORM
+  </h1>
 
----
-## 📸 Screenshot Hasil
+  <br />
 
-> Tambahkan screenshot dari emulator/device kamu di sini setelah menjalankan app.
+  <h3>MODUL 4 <br>
+  FLUTTER
+  </h3>
 
-![Screenshot App](screenshot.png)
+  <br />
 
-*Cara ambil screenshot di emulator: jalankan app → di toolbar emulator klik ikon kamera / tekan `Ctrl+S`*
+  <img width="350" height="350" alt="logo" src="https://github.com/user-attachments/assets/22ae9b17-5e73-48a6-b5dd-281e6c70613e" />
 
----
+
+
+  <br />
+  <br />
+  <br />
+
+  <h3>Disusun Oleh :</h3>
+
+  <p>
+    <strong>Boutefhika Nuha Ziyadatul Khair</strong><br>
+    <strong>2311102316</strong><br>
+    <strong>S1 IF-11-01</strong>
+  </p>
+
+  <br />
+
+  <h3>Dosen Pengampu :</h3>
+
+  <p>
+    <strong>Dimas Fanny Hebrasianto Permadi, S.ST., M.Kom</strong>
+  </p>
+  
+  <br />
+  <br />
+    <h4>Asisten Praktikum :</h4>
+    <strong>Apri Pandu Wicaksono </strong> <br>
+    <strong>Rangga Pradarrell Fathi</strong>
+  <br />
+
+  <h3>LABORATORIUM HIGH PERFORMANCE
+ <br>FAKULTAS INFORMATIKA <br>UNIVERSITAS TELKOM PURWOKERTO <br>2026</h3>
+</div>
+
+<hr>
 
 ## 💻 Source Code
 
@@ -494,11 +530,9 @@ class HomePage extends StatelessWidget {
 }
 ```
 
----
+## Penjelasan Widget
 
-## 📖 Penjelasan Widget
-
-### 1. 📦 Container
+### 1. Container
 
 ```dart
 Container(
@@ -521,7 +555,7 @@ Container(
 
 ---
 
-### 2. 🔲 GridView
+### 2. GridView
 
 ```dart
 GridView.count(
@@ -537,7 +571,7 @@ GridView.count(
 
 ---
 
-### 3. 📜 ListView
+### 3. ListView
 
 ```dart
 ListView(
@@ -552,7 +586,7 @@ ListView(
 
 ---
 
-### 4. 🏗️ ListView.builder
+### 4. ListView.builder
 
 ```dart
 ListView.builder(
@@ -573,9 +607,7 @@ ListView.builder(
 
 **ListView.builder** digunakan untuk menampilkan list secara dinamis dari data array. Widget item hanya dibuat saat akan tampil di layar (*lazy rendering*), sehingga lebih efisien untuk data yang banyak. `itemBuilder` dipanggil untuk setiap index dan mengembalikan widget item. Data bersumber dari `buahList` berisi 5 nama buah, tiap nomor badge punya warna pastel berbeda.
 
----
-
-### 5. ➖ ListView.separated
+### 5. ListView.separated
 
 ```dart
 ListView.separated(
@@ -600,9 +632,7 @@ ListView.separated(
 
 **ListView.separated** mirip `ListView.builder` namun secara otomatis menambahkan widget pemisah di antara setiap item. `separatorBuilder` menentukan tampilan pemisah — pada contoh ini berupa `Divider` tipis berwarna pastel lavender. Data bersumber dari `hewanList` berisi 5 nama hewan dengan emoji masing-masing (🐱🐶🐰🐹🐦).
 
----
-
-### 6. 🗂️ Stack
+### 6. Stack
 
 ```dart
 Stack(
@@ -627,33 +657,4 @@ Stack(
 
 ---
 
-## ▶️ Cara Menjalankan
-
-```bash
-# 1. Clone/download project
-cd flutter_application_1
-
-# 2. Install dependencies
-flutter pub get
-
-# 3. Jalankan di emulator/device
-flutter run
-
-# 4. Atau jalankan di Chrome
-flutter run -d chrome
-```
-
----
-
-## 🛠️ Teknologi
-
-| Tools | Versi |
-|---|---|
-| Flutter | ≥ 3.0.0 |
-| Dart | ≥ 3.0.0 |
-| Material Design | 3 |
-
----
-
-*Praktikum Modul 4 — Pemrograman Mobile* 🌸
-
+## Screenshot Hasil
